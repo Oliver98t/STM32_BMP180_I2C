@@ -21,7 +21,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "BMP180.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -35,14 +35,12 @@
 
 /* Private macro -------------------------------------------------------------*/
 /* USER CODE BEGIN PM */
-#define BMP180_ADDRESS 0x77 << 1
-#define ID_REG 0xD0
+
 /* USER CODE END PM */
 
 /* Private variables ---------------------------------------------------------*/
 
-I2C_HandleTypeDef hi2c1;
-uint8_t buf[10];
+
 /* USER CODE BEGIN PV */
 
 /* USER CODE END PV */
@@ -59,7 +57,7 @@ void HAL_I2C_MasterRxCpltCallback(I2C_HandleTypeDef *hi2c);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-
+I2C_HandleTypeDef hi2c1;
 /* USER CODE END 0 */
 
 /**
